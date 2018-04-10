@@ -1,12 +1,12 @@
 .topnav-geometric-background{
-  width: 200px;
-  height: 200px;
-  transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+  width: 544px;
+  height: 300px;
+  transform: rotate(13deg); /* Equal to rotateZ(13deg) */
   background-color: #8377af; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */ 
   z-index: -1;
   position: absolute;
-  right: -35px;
-  top: -35px;
+  right: -59px;
+  top: -90px;
 }
 
 .navlogo{
