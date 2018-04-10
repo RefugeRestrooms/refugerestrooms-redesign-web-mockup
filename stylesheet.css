@@ -4,3 +4,7 @@
   transform: rotate(45deg); /* Equal to rotateZ(45deg) */
   background-color: purple;
 }
+
+.navlogo{
+  width: 260px;
+}
