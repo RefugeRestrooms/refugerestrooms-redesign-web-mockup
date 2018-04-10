@@ -21,5 +21,9 @@ body{
 }
 
 .darkpurple-text{
-  color: #3e3467; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */ /* #41326b */
+  color: #3e3467; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
+}
+
+.grey-text{
+  color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
 }
