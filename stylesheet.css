@@ -2,7 +2,7 @@
   width: 200px;
   height: 100px;
   transform: rotate(45deg); /* Equal to rotateZ(45deg) */
-  background-color: purple;
+  background-color: #8377af; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */ 
 }
 
 .navlogo{
