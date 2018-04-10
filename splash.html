@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>REFUGE Restrooms</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="topnav-geometric-background"></div>
+		<header>
+			<nav>
+				<a href="/"><img src="/logo-light.svg" alt="Visit Refuge Restrooms' homepage"/>Refuge Restrooms</a>
+				<a href="/restrooms/new">Submit a New Restroom</a>
+				<a href="/about">About</a>
+				<a href="/contact">Contact</a>
+				<ul>
+					<li><a href="/signs">Download Unisex Restroom Signs</a></li>
+					<li><a href="/api/docs">Public API</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div>
+			<span>Sometimes life is tough...</span>
+			<strong>Find Refuge</strong>
+		</div>
+		<p>Refuge Restrooms is a web application that seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals.</p>
+		<form action="/restrooms" accept-charset="UTF-8" method="get">
+			<input name="utf8" value="✓" type="hidden">
+			<input name="lat" id="lat" value="" type="hidden">
+			<input name="long" id="long" value="" type="hidden">
+			<input name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
+			<button aria-label="Search" title="Search" type="button" value="Search"></button>
+			<button aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
+		</form>
+		<a href="restrooms/new"><button>Add a Restroom<img src="plus-icon.png"/></button></a>
+		<footer>
+			<p>Refuge Restrooms is open source. <a href="https://github.com/RefugeRestrooms/refugerestrooms">code on GitHub.</a><br>contribute to the project <a href="https://patreon.com/refugerestrooms">on patreon.</a><br>&copy; copyleft 2018 refuge restrooms.</p>
+			<nav>
+				<a href="https://github.com/RefugeRestrooms/refugerestrooms"><img src="github.png" alt="Refuge Restrooms on github"/></a>
+				<a href="https://twitter.com/refugerestrooms"><img src="twitter.png/" alt="Refuge Restrooms on twitter"></a>
+				<a href="https://www.facebook.com/refugerestrooms"><img src="facebook.png" alt="Refuge Restrooms on facebook"/></a>
+				<a href="http://blog.refugerestrooms.org/"><img src="tumblr.png" alt="Refuge Restrooms blog on tumblr"/></a>
+				<a href="/contact"><img src="email.png" alt="Email Refuge Restrooms"/></a>
+				<a href="https://itunes.apple.com/us/app/refuge-restrooms/id968531953?mt=8"><img src="app-store.png" alt="Refuge Restrooms app on the iOS App Store"/></a>
+				<a href="https://play.google.com/store/apps/details?id=org.refugerestrooms"><img src="play-store.png" alt="Refuge Restrooms app on the Google Play Store"/></a>
+				<a href="https://patreon.com/refugerestrooms"><img src="patreon.png" alt="Refuge Restrooms on Patreon"/></a>
+			</nav>
+		</footer>
+	</body>
+</html>

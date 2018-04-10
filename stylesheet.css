@@ -1,0 +1,6 @@
+.topnav-geometric-background{
+  width: 200px;
+  height: 100px;
+  transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+  background-color: purple;
+}
