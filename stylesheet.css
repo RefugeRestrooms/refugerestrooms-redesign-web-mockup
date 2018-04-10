@@ -1,3 +1,8 @@
+body{
+  margin: 0px;
+  overflow: hidden;
+}
+
 .topnav-geometric-background{
   width: 544px;
   height: 300px;
@@ -5,8 +10,8 @@
   background-color: #8377af; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */ 
   z-index: -1;
   position: absolute;
-  right: -59px;
-  top: -90px;
+  right: -8px;
+  top: -91px;
 }
 
 .navlogo{
