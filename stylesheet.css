@@ -8,3 +8,7 @@
 .navlogo{
   width: 260px;
 }
+
+.darkpurple-text{
+  color: #3e3467; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */ /* #41326b */
+}
