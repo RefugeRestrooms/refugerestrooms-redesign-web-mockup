@@ -8,6 +8,11 @@ header{
   margin-bottom: 96px;
 }
 
+main{
+  margin: 160px 68px;
+  width: 40em;
+}
+
 .topnav-geometric-background{
   width: 544px;
   height: 300px;
@@ -25,6 +30,10 @@ header{
   top: 68px;
 }
 
+.find-refuge-div{
+  margin-bottom: -6px;
+}
+
 .topnav a{
   margin: 0px 10px;
 }
@@ -38,6 +47,15 @@ header{
 nav a{
   text-decoration: none;
   color: white;
+}
+
+.large-text{
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.large-text p{
+  margin: 0px 0px;
 }
 
 .darkpurple-text{

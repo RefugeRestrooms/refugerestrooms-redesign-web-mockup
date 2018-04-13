@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 	<head>
 		<title>REFUGE Restrooms</title>
 		<link rel="stylesheet" href="stylesheet.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:700,900" rel="stylesheet">
 		<meta charset="utf-8">
 	</head>
 	<body>
@@ -20,20 +20,22 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="darkpurple-text">
-			<p>Sometimes life is tough...</p>
-			<p>Find Refuge</p>
-		</div>
-		<p class = "grey-text">Refuge Restrooms is a web application that seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals.</p>
-		<form action="/restrooms" accept-charset="UTF-8" method="get">
-			<input name="utf8" value="✓" type="hidden">
-			<input name="lat" id="lat" value="" type="hidden">
-			<input name="long" id="long" value="" type="hidden">
-			<input name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
-			<button aria-label="Search" title="Search" type="button" value="Search"></button>
-			<button aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
-		</form>
-		<a href="restrooms/new"><button>Add a Restroom<img src="plus-icon.png"/></button></a>
+		<main>
+			<div class="darkpurple-text large-text find-refuge-div">
+				<p>Sometimes Life is Tough...</p>
+				<p>Find Refuge</p>
+			</div>
+			<p class = "grey-text">Refuge Restrooms is a web application that seeks to provide safe restroom access<br>for transgender, intersex, and gender nonconforming individuals.</p>
+			<form action="/restrooms" accept-charset="UTF-8" method="get">
+				<input name="utf8" value="✓" type="hidden">
+				<input name="lat" id="lat" value="" type="hidden">
+				<input name="long" id="long" value="" type="hidden">
+				<input name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
+				<button aria-label="Search" title="Search" type="button" value="Search"></button>
+				<button aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
+			</form>
+			<a href="restrooms/new"><button>Add a Restroom<img src="plus-icon.png"/></button></a>
+		</main>
 		<footer>
 			<p>Refuge Restrooms is open source. <a href="https://github.com/RefugeRestrooms/refugerestrooms">code on GitHub.</a><br>contribute to the project <a href="https://patreon.com/refugerestrooms">on patreon.</a><br>&copy; copyleft 2018 refuge restrooms.</p>
 			<nav>
