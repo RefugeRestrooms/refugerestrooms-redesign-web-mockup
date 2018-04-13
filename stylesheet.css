@@ -12,7 +12,7 @@ body{
   z-index: -1;
   position: absolute;
   right: -8px;
-  top: -91px;
+  top: -92px;
 }
 
 .topnav{
@@ -22,8 +22,8 @@ body{
 }
 
 .navlogo{
-  width: 241.7px;
-  margin: 37px 35px;
+  width: 241px;
+  margin: 36px;
 
 }
 
