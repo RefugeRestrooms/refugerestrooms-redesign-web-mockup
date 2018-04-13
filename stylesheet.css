@@ -17,8 +17,12 @@ body{
 
 .topnav{
   position: absolute;
-  right: 120px;
-  top: 45px;
+  right: 174px;
+  top: 68px;
+}
+
+.topnav a{
+  margin: 0px 10px;
 }
 
 .navlogo{
