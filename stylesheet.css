@@ -13,6 +13,10 @@ main{
   width: 40em;
 }
 
+form{
+  margin: 20px 0px;
+}
+
 .topnav-geometric-background{
   width: 544px;
   height: 300px;
@@ -47,6 +51,48 @@ main{
 nav a{
   text-decoration: none;
   color: white;
+}
+
+.input-group{
+  display: table;
+  box-sizing: border-box;
+}
+
+.input-group-btn{
+  display: table-cell;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.form-control{
+  height: 35px;
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align:middle;
+  font-family: inherit;
+  border: 1.5px solid #41326B;
+  border-radius: 2px;
+}
+
+.btn {
+  width: 35px;
+  margin-left: -1px;
+  cursor: pointer;
+}
+
+.splash-add-restroom-btn{
+  width: 35%;
+  background-color: rgba(65,50,107,0.9);
+  border-radius: 3px;
+  border: 1px solid transparent;
+  box-shadow: 3.5px 3.5px 12px 0px rgba(50,50,50,0.75);
+  line-height: 1.3333333;
+  font-family: inherit;
+  vertical-align: middle;
+  color: white;
+  margin: 3px;
+  padding: 5px 8px;
+  cursor: pointer;
 }
 
 .large-text{

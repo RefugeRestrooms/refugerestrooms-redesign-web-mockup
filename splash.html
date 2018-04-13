@@ -30,11 +30,14 @@
 				<input name="utf8" value="✓" type="hidden">
 				<input name="lat" id="lat" value="" type="hidden">
 				<input name="long" id="long" value="" type="hidden">
-				<input name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
-				<button aria-label="Search" title="Search" type="button" value="Search"></button>
-				<button aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
+				<div class="input-group">
+					<input class="form-control" name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
+					<div class="input-group-btn">
+						<button class="btn form-control" aria-label="Search" title="Search" type="button" value="Search"></button><button class="btn form-control" aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
+					</div>
+				</div>
 			</form>
-			<a href="restrooms/new"><button>Add a Restroom<img src="plus-icon.png"/></button></a>
+			<a href="restrooms/new"><button class="splash-add-restroom-btn">Add a Restroom<span class="plus-button"></span></button></a>
 		</main>
 		<footer>
 			<p>Refuge Restrooms is open source. <a href="https://github.com/RefugeRestrooms/refugerestrooms">code on GitHub.</a><br>contribute to the project <a href="https://patreon.com/refugerestrooms">on patreon.</a><br>&copy; copyleft 2018 refuge restrooms.</p>
