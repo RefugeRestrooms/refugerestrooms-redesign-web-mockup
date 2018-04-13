@@ -9,12 +9,30 @@ header{
 }
 
 main{
-  margin: 160px 68px;
+  margin: 160px 68px 96px;
   width: 40em;
 }
 
 form{
   margin: 20px 0px;
+}
+
+footer{
+  color: white;
+  background-color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
+  position: absolute;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+footer > p{
+  width: 25em;
+  float: left;
+}
+
+footer > nav{
+  width: 40em;
+  float: right;
 }
 
 .topnav-geometric-background{
@@ -46,6 +64,11 @@ form{
   width: 241px;
   margin: 36px;
 
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
 }
 
 nav a{
