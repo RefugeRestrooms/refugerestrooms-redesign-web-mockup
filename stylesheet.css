@@ -26,6 +26,11 @@ body{
 
 }
 
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
 .darkpurple-text{
   color: #3e3467; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
 }
