@@ -28,6 +28,8 @@ footer{
 footer > p{
   width: 25em;
   float: left;
+  margin-left: 25px;
+  vertical-align: middle;
 }
 
 footer > nav{
