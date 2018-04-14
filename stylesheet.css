@@ -21,20 +21,21 @@ footer{
   color: white;
   background-color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
   position: absolute;
-  margin-bottom: 0px;
+  bottom: 0px;
   width: 100%;
+  height: 148px;
 }
 
 footer > p{
   width: 25em;
   float: left;
-  margin-left: 25px;
+  margin: 43px 30px;
   vertical-align: middle;
 }
 
 footer > nav{
-  width: 40em;
   float: right;
+  margin: 25px 30px;
 }
 
 .topnav-geometric-background{
@@ -135,4 +136,13 @@ nav a{
 
 .grey-text{
   color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
+}
+
+.social-row{
+  text-align: right;
+}
+
+.patreon-button{
+  height: 45px;
+  border-radius: 3px;
 }
