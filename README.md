@@ -20,3 +20,5 @@ Eventually, this can be enhanced with responsive design techniques. This is only
 \* (I am working at a page size of <code>1050 x 898</code>, because I don't have a monitor wider than 2100 pixels;
 Furthermore, one of the most common screen resolutions on the web is still <code>1366x768</code><sup>[[1](https://www.w3schools.com/browsers/browsers_display.asp)]</sup>, so it's good to have a design that works on a 1366px wide display.
 As mentioned above, responsive design techniques can make this layout work at any screen size. I just needed a set of dimensions to start with.)
+## Preview (Work in Progress)
+![Preview.png](https://raw.githubusercontent.com/RefugeRestrooms/refugerestrooms-redesign-web-mockup/preview/Preview.png)
