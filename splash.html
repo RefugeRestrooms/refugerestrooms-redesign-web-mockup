@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="topnav-geometric-background"></div>
-		<header>
+		<header class="page-row">
 			<a href="/"><img class="navlogo" src="logo-light.svg" alt="Visit Refuge Restrooms' homepage"/></a>
 			<nav class="topnav">
 				<a href="/restrooms/new">Submit a New Restroom</a>
@@ -23,26 +23,28 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<div class="darkpurple-text large-text find-refuge-div">
-				<p>Sometimes Life is Tough...</p>
-				<p>Find Refuge</p>
-			</div>
-			<p class = "grey-text">Refuge Restrooms is a web application that seeks to provide safe restroom access<br>for transgender, intersex, and gender nonconforming individuals.</p>
-			<form action="/restrooms" accept-charset="UTF-8" method="get">
-				<input name="utf8" value="✓" type="hidden">
-				<input name="lat" id="lat" value="" type="hidden">
-				<input name="long" id="long" value="" type="hidden">
-				<div class="input-group">
-					<input class="form-control" name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
-					<div class="input-group-btn">
-						<button class="btn form-control" aria-label="Search" title="Search" type="button" value="Search"></button><button class="btn form-control" aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
-					</div>
+		<main class="page-row page-row-expanded">
+			<div class="main-content-wrapper">
+				<div class="darkpurple-text large-text find-refuge-div">
+					<p>Sometimes Life is Tough...</p>
+					<p>Find Refuge</p>
 				</div>
-			</form>
-			<a href="restrooms/new"><button class="splash-add-restroom-btn">Add a Restroom<span class="plus-button"></span></button></a>
+				<p class = "grey-text">Refuge Restrooms is a web application that seeks to provide safe restroom access<br>for transgender, intersex, and gender nonconforming individuals.</p>
+				<form action="/restrooms" accept-charset="UTF-8" method="get">
+					<input name="utf8" value="✓" type="hidden">
+					<input name="lat" id="lat" value="" type="hidden">
+					<input name="long" id="long" value="" type="hidden">
+					<div class="input-group">
+						<input class="form-control" name="search" id="search" aria-label="Enter an address" placeholder="Enter a query" autocomplete="off" type="text">
+						<div class="input-group-btn">
+							<button class="btn form-control" aria-label="Search" title="Search" type="button" value="Search"></button><button class="btn form-control" aria-label="Search by Current Location" title="Search by Current Location" type="button" value="Search by Current Location"></button>
+						</div>
+					</div>
+				</form>
+				<a href="restrooms/new"><button class="splash-add-restroom-btn">Add a Restroom<span class="plus-button"></span></button></a>
+			</div>
 		</main>
-		<footer>
+		<footer class="page-row">
 			<p>Refuge Restrooms is open source. <a href="https://github.com/RefugeRestrooms/refugerestrooms">code on GitHub.</a><br>contribute to the project <a href="https://patreon.com/refugerestrooms">on patreon.</a><br>&copy; copyleft 2018 refuge restrooms.</p>
 			<nav>
 				<div class="social-row">

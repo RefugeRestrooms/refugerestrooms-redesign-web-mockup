@@ -1,5 +1,11 @@
+html, body{
+	height:100%
+}
+
 body{
+  width: 100%;
   margin: 0px;
+  display: table;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
 }
@@ -8,7 +14,7 @@ header{
   margin-bottom: 96px;
 }
 
-main{
+.main-content-wrapper{
   margin: 160px 68px 96px;
   width: 40em;
 }
@@ -27,7 +33,7 @@ footer{
 }
 
 footer > p{
-  width: 25em;
+  max-width: 25em;
   float: left;
   margin: 43px 30px;
   vertical-align: middle;
@@ -145,4 +151,12 @@ nav a{
 .patreon-button{
   height: 45px;
   border-radius: 3px;
+}
+
+.page-row{
+  display: table-row;
+}
+
+.page-row-expanded{
+  height: 100%;
 }
