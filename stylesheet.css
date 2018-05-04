@@ -23,18 +23,28 @@ footer{
   position: absolute;
   margin-bottom: 0px;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-footer > p{
+footer > p {
   width: 25em;
   float: left;
-  margin-left: 25px;
+  margin-left: 35px;
   vertical-align: middle;
+  line-height: 1.3rem;
+  font-weight: 400;
 }
 
 footer > nav{
-  width: 40em;
+  width: 50%;
   float: right;
+  text-align: right;
+  padding-right: 35px;
+}
+
+.social-row {
+  font-size: 36px;
 }
 
 .topnav-geometric-background{
@@ -50,7 +60,7 @@ footer > nav{
 
 .topnav{
   position: absolute;
-  right: 174px;
+  right: 50px;
   top: 68px;
 }
 
@@ -83,29 +93,62 @@ nav a{
   box-sizing: border-box;
 }
 
+input#search {
+  padding-left: 14px;
+}
+
 .input-group-btn{
   display: table-cell;
   box-sizing: border-box;
   white-space: nowrap;
 }
 
+input[type="text"]::placeholder {
+  color: #b8b7b9;
+}
+
 .form-control{
-  height: 35px;
+  height: 43px;
   box-sizing: border-box;
   display: table-cell;
   vertical-align:middle;
   font-family: inherit;
-  border: 1.5px solid #41326B;
+  border: 1.5px solid #564a7b;
   border-radius: 2px;
+  width: 290px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #564a7b;
+}
+
+.form-control:focus {
+  outline: 0;
+}
+
+i.far.fa-plus-square {
+  margin-left: 9px;
+  font-size: 14px;
+  position: relative;
+  top: 1px;
+}
+
+button .fas {
+  font-size: 18px;
 }
 
 .btn {
-  width: 35px;
-  margin-left: -1px;
+  width: 55px;
+  margin-left: -2px;
+  margin-top: -1px;
   cursor: pointer;
 }
 
-.splash-add-restroom-btn{
+.btn:hover {
+  background: #564a7b;
+  color: #fff;
+}
+
+.splash-add-restroom-btn {
   width: 35%;
   background-color: rgba(65,50,107,0.9);
   border-radius: 3px;
@@ -115,14 +158,19 @@ nav a{
   font-family: inherit;
   vertical-align: middle;
   color: white;
-  margin: 3px;
-  padding: 5px 8px;
+  padding: 8px;
   cursor: pointer;
+  font-size: 12px;
+}
+
+.splash-add-restroom-btn:hover {
+ background-color: rgb(62, 52, 103);
 }
 
 .large-text{
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .large-text p{
@@ -135,4 +183,17 @@ nav a{
 
 .grey-text{
   color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
+  line-height: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+nav ul,
+.social {
+  list-style: none;
+}
+
+nav ul li,
+.social {
+  display: inline-block;
 }
