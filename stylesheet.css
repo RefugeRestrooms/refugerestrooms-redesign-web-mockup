@@ -2,15 +2,23 @@ body{
   margin: 0px;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
+
+  /* flex stuff below */ /* (thank you Phillip Walton... https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 header{
-  margin-bottom: 96px;
+ /* margin-bottom: 96px; */
 }
 
 main{
   margin: 160px 68px 96px;
   width: 40em;
+
+  /* flex stuff below */
+  flex: 1;
 }
 
 form{
@@ -20,7 +28,6 @@ form{
 footer{
   color: white;
   background-color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
-  position: absolute;
   margin-bottom: 0px;
   width: 100%;
   padding-top: 15px;
