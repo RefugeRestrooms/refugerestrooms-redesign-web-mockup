@@ -2,56 +2,48 @@ body{
   margin: 0px;
   overflow-x: hidden;
   font-family: Lato, sans-serif;
-
-  /* flex stuff below */ /* (thank you Phillip Walton... https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-header{
- /* margin-bottom: 96px; */
 }
 
 main{
-  margin: 160px 68px 96px;
   width: 40em;
-
-  /* flex stuff below */
-  flex: 1;
 }
 
-form{
-  margin: 20px 0px;
-}
-
-footer{
-  color: white;
-  background-color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
-  margin-bottom: 0px;
+header {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
-footer > p {
-  width: 25em;
-  float: left;
-  margin-left: 35px;
-  vertical-align: middle;
-  line-height: 1.3rem;
-  font-weight: 400;
+/* NAVBAR */
+
+.topnav{
+  position: absolute;
+  right: 50px;
+  top: 68px;
+  height: auto;
+  transition: 1s height;
 }
 
-footer > nav{
-  width: 50%;
-  float: right;
-  text-align: right;
-  padding-right: 35px;
+.topnav ul {
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 0px;
 }
 
-.social-row {
-  font-size: 36px;
+.topnav li {
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+
+.topnav li a{
+  margin: 0px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.navlogo{
+  width: 241px;
+  margin: 36px;
 }
 
 .topnav-geometric-background{
@@ -65,34 +57,80 @@ footer > nav{
   top: -92px;
 }
 
-.topnav{
-  position: absolute;
-  right: 50px;
-  top: 68px;
+.collapsed-nav {
+  height: auto;
+  background-color: #8377af;
+  display: none;
 }
 
-.find-refuge-div{
-  margin-bottom: -6px;
+.collapsed-nav div {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  position: relative;
+  left: 85%;
+  top: -2px;
 }
 
-.topnav a{
-  margin: 0px 10px;
+@media all and (max-width: 768px) {
+  .navlogo {
+    width: 100%;
+    max-height: 120px;
+    margin: 10px auto;
+  }
+  
+  .topnav-geometric-background {
+    display: none;
+  }
+  
+  .topnav {
+    position: static;
+    right: 0;
+    top: 0;
+    background-color: #8377af;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
 }
 
-.navlogo{
-  width: 241px;
-  margin: 36px;
 
+@media all and (max-width: 480px) { 
+  .topnav {
+    padding-top: 15px;
+    margin-top: -1px;
+  }
+  
+  .topnav ul {
+    overflow: hidden;
+    margin: 0px;
+  }
+  
+  .topnav li {
+    display: block;
+    padding: 10px 0px;
+  }
+  
+  #links {
+    max-height: 0px;
+    transition: max-height 0.25s ease-in-out, padding 0s ease-in-out;
+  }
+  
+  #links.active {
+    overflow: hidden;
+    max-height: 500px;
+  }
+  
+  .collapsed-nav {
+    display: block;
+  }
+   
 }
 
-footer a{
-  text-decoration: none;
-  color: white;
-}
-
-nav a{
-  text-decoration: none;
-  color: white;
+/* MAIN CONTENT */
+main{
+  width: 100%;
+  margin: 160px 68px 96px;
 }
 
 .input-group{
@@ -108,6 +146,7 @@ input#search {
   display: table-cell;
   box-sizing: border-box;
   white-space: nowrap;
+  vertical-align: bottom;
 }
 
 input[type="text"]::placeholder {
@@ -156,7 +195,7 @@ button .fas {
 }
 
 .splash-add-restroom-btn {
-  width: 35%;
+  width: 225px;
   background-color: rgba(65,50,107,0.9);
   border-radius: 3px;
   border: 1px solid transparent;
@@ -168,39 +207,75 @@ button .fas {
   padding: 8px;
   cursor: pointer;
   font-size: 12px;
+  margin-top: 35px;
+  margin-left: 10px;
 }
 
 .splash-add-restroom-btn:hover {
   background-color: rgb(62, 52, 103);
 }
 
-.large-text{
+
+.find-refuge-div{
+  margin-bottom: -6px;
+}
+
+.large-text {
   font-size: 48px;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
-.large-text p{
+.large-text p {
   margin: 0px 0px;
 }
 
 .darkpurple-text{
   color: #3e3467; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
+  width: 75%;
 }
 
-.grey-text{
+.grey-text {
   color: #808080; /* From official color scheme: https://color.adobe.com/Refuge-Restrooms-color-theme-4191730/ */
   line-height: 1.3rem;
   font-weight: 600;
   margin-bottom: 30px;
+  max-width: 580.5px;
 }
 
-nav ul,
-.social {
-  list-style: none;
-}
 
-nav ul li,
-.social {
-  display: inline-block;
+@media all and (max-width: 768px) {
+  main {
+    margin: 0 auto;
+  }
+  
+  .darkpurple-text {
+    margin: 0 auto;
+    font-size: 2em;
+    margin-top: 50px;
+    width: 85%;
+  }
+  
+  .grey-text {
+    width: 85%;
+    margin: 30px auto 30px;
+    max-width: none;
+  }
+  
+  .input-group {
+    margin-left: 40px;
+  }
+  
+  .splash-add-restroom-btn {
+    margin: 15px 0 0;
+  }
+  
+  input.form-control {
+    width: 60vw;
+  }
+  
+  .add-restroom-wrapper {
+    text-align: left;
+    padding-left: 40px;
+  }
 }
