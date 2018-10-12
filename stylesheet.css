@@ -113,7 +113,7 @@ header {
   
   #links {
     max-height: 0px;
-    transition: max-height 0.25s ease-in-out, padding 0s ease-in-out;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
   }
   
   #links.active {
@@ -277,5 +277,35 @@ button .fas {
   .add-restroom-wrapper {
     text-align: left;
     padding-left: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group {
+    display: block;
+    margin-left: 0px;
+  }
+  
+  .input-group-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  input.form-control {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .add-restroom-wrapper {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .add-restroom-wrapper button {
+    width: 180px;
   }
 }
