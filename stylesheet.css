@@ -12,7 +12,6 @@ header {
 }
 
 /* NAVBAR */
-
 .topnav{
   position: absolute;
   right: 50px;
@@ -338,19 +337,21 @@ button .fas {
   .input-group {
     display: block;
     margin-left: 0px;
+    width: 90%;
+    margin: 0 auto;
   }
   
   .input-group-btn {
-    display: block;
-    width: 100%;
-    text-align: center;
+    display: inline-block;
+    width: 30%;
+    text-align: left;
     margin-top: 10px;
+    margin-left: -5px;
   }
   
   input.form-control {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
+    display: inline-block;
+    width: 60%;
   }
   
   .add-restroom-wrapper {
